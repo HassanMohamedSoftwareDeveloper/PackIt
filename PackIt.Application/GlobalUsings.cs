@@ -1,0 +1,14 @@
+﻿global using PackIt.Application.DTO.External;
+global using PackIt.Application.Exceptions;
+global using PackIt.Application.Services;
+global using PackIt.Domain.Consts;
+global using PackIt.Domain.Factories;
+global using PackIt.Domain.Policies;
+global using PackIt.Domain.Repositories;
+global using PackIt.Domain.ValueObjects;
+global using PackIt.Shared.Abstractions.Commands;
+global using PackIt.Shared.Abstractions.Exceptions;
+global using PackIt.Shared.Commands;
+global using PackIt.Shared.Queries;
+global using PackIt.Shared.Abstractions.Queries;
+global using PackIt.Application.DTO;

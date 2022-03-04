@@ -1,6 +1,6 @@
 ﻿namespace PackIt.Domain.Factories;
 
-public class PackingListFactory : IPackingListFactory
+public sealed class PackingListFactory : IPackingListFactory
 {
     private readonly IEnumerable<IPackingItemsPolicy> _policies;
 

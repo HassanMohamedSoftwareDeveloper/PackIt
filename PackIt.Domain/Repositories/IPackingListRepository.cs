@@ -5,5 +5,5 @@ public interface IPackingListRepository
     Task<PackingList> GetAsync(PackingListId id);
     Task AddAsync(PackingList packingList);
     Task UpdateAsync(PackingList packingList);
-    Task DeleteAsync(PackingListId id);
+    Task DeleteAsync(PackingList packingList);
 }
