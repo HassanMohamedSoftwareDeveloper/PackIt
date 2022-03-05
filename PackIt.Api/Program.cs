@@ -1,6 +1,4 @@
-﻿
-
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddShared();
 builder.Services.AddApplication();
@@ -17,7 +15,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
+
+app.UseShared();
 
 app.UseAuthorization();
 

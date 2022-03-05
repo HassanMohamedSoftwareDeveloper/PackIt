@@ -2,7 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using PackIt.Application.Services;
 using PackIt.Infrasturcture.EF;
+using PackIt.Infrasturcture.Logging;
 using PackIt.Infrasturcture.Services;
+using PackIt.Shared.Abstractions.Commands;
 
 namespace PackIt.Infrasturcture
 {
@@ -13,6 +15,7 @@ namespace PackIt.Infrasturcture
             @this.AddPostgres(configuration);
             @this.AddQueries();
             @this.AddSingleton<IWeatherService, DumbWeatherService>();
+            @this.TryDecorate(typeof(ICommandHandler<>), typeof(LoggingCommandHandlerDecorator<>));
             return @this;
         }
     }

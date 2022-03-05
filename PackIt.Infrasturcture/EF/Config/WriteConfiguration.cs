@@ -13,7 +13,7 @@ internal sealed class WriteConfiguration : IEntityTypeConfiguration<PackingList>
         builder.HasKey(pl => pl.Id);
 
         var localizationConverter = new ValueConverter<Localization, string>(l => l.ToString(), l => Localization.Create(l));
-        var packingListNameConverter = new ValueConverter<PackingListName, string>(pln => pln.ToString(), pln => new PackingListName(pln));
+        var packingListNameConverter = new ValueConverter<PackingListName, string>(pln =>pln, pln => new PackingListName(pln));
 
         builder.Property(pl => pl.Id).HasConversion(id => id.Value, id => new PackingListId(id));
 
