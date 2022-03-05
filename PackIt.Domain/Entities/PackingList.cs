@@ -7,6 +7,10 @@ public class PackingList : AggregateRoot<PackingListId>
 
     private readonly LinkedList<PackingItem> _items = new();
 
+    private PackingList()
+    {
+
+    }
     private PackingList(PackingListId id, PackingListName name, Localization localization,
         LinkedList<PackingItem> items): this(id, name, localization)
     {

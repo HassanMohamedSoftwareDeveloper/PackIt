@@ -2,5 +2,5 @@
 
 public class SearchPackingLists : IQuery<IEnumerable<PackingListDto>>
 {
-    public string Search { get; set; }
+    public string SearchPhrase { get; set; }
 }
