@@ -28,11 +28,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57390850-1B68-4314-9CF1-D6785DAAC779}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.github\workflows\Add CI With DockerHub Push.yml = .github\workflows\Add CI With DockerHub Push.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8E7DBD8C-ABA6-496E-B726-C1F0C7D6B4E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIt.UnitTests", "PackIt.UnitTests\PackIt.UnitTests.csproj", "{32F6E981-3CAF-45AD-A1FA-C7043A015B11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackIt.UnitTests", "PackIt.UnitTests\PackIt.UnitTests.csproj", "{32F6E981-3CAF-45AD-A1FA-C7043A015B11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
