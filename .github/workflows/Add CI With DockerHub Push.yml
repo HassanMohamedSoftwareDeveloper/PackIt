@@ -28,6 +28,6 @@ jobs:
       with:
         image: hassanmohamedhm/packit
         registry: docker.io
-        dockerfile: PackIt/PackIt.Api/Dockerfile
+        dockerfile: PackIt.Api/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
